@@ -96,7 +96,7 @@ int main(void)
     printf("=== Array before Sorting = ");
     printArray(a, array_size);
 
-    inPlaceSort(/* your input parameter */);
+    inPlaceSort(a, array_size);
 
     printf("=== Array after Sorting = ");
     printArray(a, array_size);
