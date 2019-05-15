@@ -72,7 +72,17 @@ int main(void)
      * 
      * it should parse user input with scanf to fill the array with values
      **********************/
-
+    int temp = 0;
+    int i = 0;
+    for(i; i<array_size; i++)
+    {
+        if(!scanf("%d", &temp))
+        {
+            printf("invalid input\n");
+            return EXIT_FAILURE;
+        }
+        a[i] = temp;
+    }
     printf("=== Array before Sorting = ");
     printArray(a, array_size);
 
